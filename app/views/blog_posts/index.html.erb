@@ -1,0 +1,6 @@
+<h1>My Blogs</h1>
+
+<% @blogs.each do |blog| %>
+    <h3><%= blog.title %></h3>
+    <%= blog.body %>
+<% end %>
