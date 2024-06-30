@@ -1,2 +1,9 @@
 <h1><%= @blog.title %></h1>
 <p><%= @blog.body %></p>
+
+<%= button_to "Update Post", edit_blog_path, method: :get %>
+
+<span style="margin: 0 10px;">
+    <%= button_to "Delete Post", delete_blog_path, method: :delete  %>
+</span>
+

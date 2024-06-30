@@ -1,17 +1,3 @@
 <h1>Creating new blog</h1>
 
-<%= form_with model: @blog do |form| %>
-    <div>
-        <%= form.label :title  %></br>
-        <%= form.text_field :title %>
-    </div>
-
-    <div>
-        <%= form.label :body  %></br>
-        <%= form.text_area :body %>
-    </div>
-
-    <div>
-        <%= form.submit "Post" %>
-    </div>
-<% end %>
+<%= render "form", blog: @blog  %>
